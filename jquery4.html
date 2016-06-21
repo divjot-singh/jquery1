@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery-1</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function()
+			{
+				$("button").click(function(){
+					$("a").attr('href','http://acadgild.com');
+					$("a").text("No longer a google's link");
+				});
+
+			});
+	</script>
+</head>
+<body>
+	<a href="http://google.com">This is google's link.</a>
+	<button>Click this button to change the href of the google's link</button>
+</body>
+</html>

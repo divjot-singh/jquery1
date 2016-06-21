@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery-1</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function()
+			{
+				var p=1;
+				var length=$("li").size();
+				while(p<=length)
+				{
+					$("li:nth-child("+p+")").prepend('<b>'+p+'</b> ');
+					p++;
+				};
+
+			});
+	</script>
+</head>
+<body>
+	<ul>
+		<li>Html Tutorial</li>
+		<li>Mongodb Tutorial</li>
+		<li>Python Tutorial</li>
+	</ul>
+</body>
+</html>
